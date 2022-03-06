@@ -1,76 +1,76 @@
-# SPEED AND DIRECTION CONTROL OF DC MOTOR USING ARDUINO
+# PASSWORD BASED DOOR LOCKING SYSTEM USING ARDUINO
 
 ## ABSTRACT
 
- DC Motor direction control by using Arduino is the main title of the project. By using this Arduino we can see how tO control DC Motor and we can control the direction of dc motor by simply controlling the input voltage to the motor by using potentiometer.We here use L293D chip motor driver as H-bridge.The main purpose of using L293D chip is that it can control speed and direction of dc motor.To complete this task we have to do programming in Arduino. 
+In this digitally dependent world, the security is most concern for every one of us. As we all are facing the fearof robbery, people cannot keep their valuable things
+safely even at their own houses, banks or in any otherplaces. They are always in fear of losing their valuablethings. Old traditional locking system is not that safe password  based door locking system.So, in this project we have work for all these problem and this project provide much more lock security ascompare to traditional lock security. We have replacedthe old traditional lock system with password. Thisproject will provide efficient security to the users at lowcost. It will be also easy to implement and give safety in any places like our houses, institutions, banks or anyother public places. If the users forgot the password,then he/she will change or reset the password, which
+gives the more flexibility to the users.
+ 
 
 ## INTRODUCTION
 
-DC Motors are found everywhere: electronics, toys, fans, tools, discs, pumps etc. DC Motor is an actuator that converts the DC supply to rotation or movement.There are different types of DC motors: Brushed DC motor, Brushless DC motor, Geared DC motor, Servo motor, Stepper motor and DC Linear Actuator.Different types of motors are used in different applications like Robotics, precision positioning, industrial automation etcGenerally, when a DC motor is associated with any microcontroller based system, it is often connected using a Motor Driver IC. A Motor Driver IC provides the necessary current for the motor to run. It can also control the direction of the rotation.
-In this project, an Arduino based speed and direction control of DC motor with using Motor Driver IC is designed. 
+As we all are very familiar with the term “Security”.Nowadays it is most important to keep our valuablethings safe. The world is also growing digitallydependent, and we can even design the doors to be moresecure. We can make these digital doors by using “Password” which is more secure than traditional lock system.In this project we have make a “Password Based DoorLocking System” using an Arduino. It will be more efficient for the peoples in the field of security. It will be implemented in any places like our Houses, Institutions,Banks and any Public Places. We can only be able open the door if we entered correct password for door and if users entered an incorrect password, then message will be display or door will not be open.  
 
 ## LITERATURE SURVEY
 
-Our project main part called Arduino UNO is very important, it is open source circuit used in every electronic project work. Electronic device are become more compact, flexible and inexpensive.The DC motor is an attractive piece of equipment in many industrial applications requiring variable speed applications due to its ease of controllability. Speed of dc motor varies proportionally to the input voltage.With the fixed suplly voltage the speed of the motor can be changed by switching the supply on and off so frequently that the motor notices only the average voltage effect and not the switching operation. 
+The main objective of this project is to relinquish safety at each common place like home, public places. During this project all the data hold on within the info. once the
+proper word are going to be entered, the microcontroller can provide steering to servo engine then door can unlock. What we want is computerised innovation to develop a coordinated and every one around altered upbeat framework at a worth that is wise.
+
 
 ## High Level Requirements
 
-* To rotate in clockwise direction
-* To rotate in anti-clock wise direction.
-* To control the speed of the motor using potentiometer.
-* To develop the simulation  of control unit.
-* To test and validate the designed system.
+* System shall control opening of Doors by pressing a number on Keypad.
+* There shall be a LCD to display the numbers we press as '*'.
+* A password shall be provided for our system.
 
 ## Low Level Requirement
 
-* By varying the value of potentiometer the speed should be varied.
-* Push button is provided to rotate in clockwise direction.
-* push button is provided to rotate in anti-clockwise direction.
+* According to the values of Keypad opening of door  shall be controlled.
+* Entered value on keypad shall be displayed on LCD Screen as '*'.
+* If the password is wrong the LCD displays as wrong password.
+* Doors  shall open when the Password is matched.
 
 ## S.W.O.T Analysis
 
 ![image](https://user-images.githubusercontent.com/87614111/155712022-4b22d919-09df-451d-b3fc-5bac8dcf3e5d.png)
 
 # Strengths
- * Speed can be controlled very easily.
- * We can instantly change the direction of motor.
+ * Less human interactions.
+ * Displays password as '*' so that no one can see except that person.
  
 # Weaknesses
-* If over voltage arise it is chance to damage the motor.
-* It can not work beyond its barrier
-* Noisy operstion because of dc motor.
+* Some times Code hacking may possible if someone could guess our password.
+* This system cannot run if there is electric problems.
 
 # Oppurnities
- * The scope of this system is more at industries and where there is variable speed of motors are required.
+ * The scope of this system is more at  home, public places etc.
 
 # Threats
-* High initial cost for hardware design.
-* Maintainence cost increases.
+* High chances of pin hacking.
+* Forgotting password can also causes risk to the users.
 
 ## 4W's And 1H
 
 # Who
-The Speed control of dc motor  are used in industries,domestic,robotic applications.
+The password control door locking  are used in homes,public places.
 
 # What
-Speed control of dc motor is used to control the spped and direction of dc motor intantly.
+The password control door lockingr is used to provide lock for door by using password.
 
 # When
-Speed control of dc motor is used when the motor needs to change its direction and speed according to the requriment.
+The password control door locking is used when homes and public places needslocks for the door.
 
 # Where
-These are used in industrial,domestic,robotics,defences,communication applications.
+These are used in  homes and public placess.
 
 # How
- The circuit uses a potentiometer to change the speed and Arduino is used interfaced with potentiometer to sense the change of potentiometer which changes speed.The direction is changed by using the push buttons for clock and anti-clock wise directions.
+ The circuit uses a Arduino with lcd display and servo motor as a door locking.
  
  # Applications
- * Robotic application – to change direction and speed of moving robot
- * Industrial application – to change direction and speed of rotating machinery
- * Domestic application – to vary speed of battery (DC) operated portable fan
- * Defence application – to rotate radar, automatic gun, tank gun in either direction
- * Communication application – rotate dish antenna upward – downward or clockwise – anticlockwise.
-
+ * This system can be used in Door Control of Houses.
+ * This system can be used in Door Control of Industries.
+ * This system can be used in Door Control of Stadiums etc...
+ * 
 ## BLOCK DIAGRAM
 
 
@@ -79,33 +79,20 @@ These are used in industrial,domestic,robotics,defences,communication applicatio
 
 
 
-## Potentiometer:
-
-Light sensor is used to sense amount of light. There are many light sensors available in market but Light dependent resistor (LDR) is used as a light sensor. Because it is cheap in price, easily available in market and can be easily interfaced with microcontroller to sense intensity of light. LDR have property to change its resistance according to intensity of light. If light is high, LDR will have low resistance and if light is low, LDR will have high resistance. So microcontroller can easily read this resistance in the form of voltage and which can be back converted into proportional value of light. In this I am using push buttons gor light sensor.
+## Sensor
+#  4x4 Matrix Keypad
+  The 4x4 Matrix Keypad interfaced is to take the input from the person. We can enter the preset password to test the validity of the password. If the password is valid then,     the door lock will be unlocked. If invalid, the door lock will continue to be locked. The 4x4 Matrix Keypad includes 4 rows and 4 columns. There is a transfer that connects     every row and column. In our project We will use only the numeric between 0-9 keys along with * to change the password.
 
 # ACTUATOR
 
-## DC motor
-  DC Motor has part of many equipment and machinery. We are using 6v DC motor, It is device that can use in industrial equipment as small device and it also chipper and used in robotics, Quadcopter, and internet of the things project. DC motor work on the current and voltage needed for the capabilities of microcontroller but DC moto necessary to use some external device of electronic to drive the and control the motor and it required individual power supply. There are many ways to drive the DC motor from their output of device. however, transistor also use full to drive the DC motor and the other way to control the direction of the motor is L298 drive it is integrated circuit.
+## LCD Display:
+    Displays each and every value we enter in our keypad.
+
+ ## Servo Motor:
+   Helps in opening and closing our doors.
 
 ## Arduino Uno
-
- It is a Microcontroller Based prototyping board. The microcontroller used on the Arduino Uno board is ATmega328p. Arduino is responsible for controlling the speed and direction of the motor with the help of other components.It has 14 digital input/output pins,6 analog inputs,a 16MHz quartz crystal,a USB connection, apower jack,an ICSP header and a reset button.The circuit uses a potentiometer to change the speed and Arduino is used interfaced with potentiometer to sense the change of potentiometer which changes speed.It has come with wide range of application. Number of people are using Arduino board for developing instrument and project for scientific research. Here some application
-
-1)Security and defense system
-2)Digital electronics and robotics
-3)Traffic light count down timer
-4)Medical instrument
-5)Parking lot counter
-
-## POWER SUPPLY
-It is used for supplying the circuit.
-
-## Push Buttons
-In this project we are using two push buttons which are connected to arduino. This are used to change the directiuon of motor either in clockwise or anti-clock wise direction as per needed.
-
-## L293D chip
- This chip takes input from Arduino uno and drives DC motor. The Arduino output current is not enough to drive DC motor directly. The chip has quad half H bridge drivers. It will provide up to 600 mA current to motor that is enough to drive it.
+This microcontroller depends on the ATmega328P. There are all out of 20 pins (0-19) out of which 6 are simple information sources, 14 are computerized input yield pins(6 pins give PWM voltage) which can like be utilized as broadly useful pins, a ceramic resonator of recurrence 16 MHz, a USB association, a force jack and a reset button. It has a working voltage of 5V. It contains all that expected to help a microcontroller.
 
  
 
