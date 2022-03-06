@@ -73,9 +73,8 @@ These are used in  homes and public placess.
  * 
 ## BLOCK DIAGRAM
 
+![poasswordbased](https://user-images.githubusercontent.com/87614111/156913304-2c153a7d-5473-4811-bf7a-d4f188471a68.jpg)
 
-
-![bd](https://user-images.githubusercontent.com/87614111/156154175-5b79d394-e55c-4bd4-8314-35eddb9c8630.jpg)
 
 
 
@@ -86,12 +85,15 @@ These are used in  homes and public placess.
 # ACTUATOR
 
 ## LCD Display:
+
     Displays each and every value we enter in our keypad.
 
  ## Servo Motor:
+ 
    Helps in opening and closing our doors.
 
 ## Arduino Uno
+
 This microcontroller depends on the ATmega328P. There are all out of 20 pins (0-19) out of which 6 are simple information sources, 14 are computerized input yield pins(6 pins give PWM voltage) which can like be utilized as broadly useful pins, a ceramic resonator of recurrence 16 MHz, a USB association, a force jack and a reset button. It has a working voltage of 5V. It contains all that expected to help a microcontroller.
 
  
